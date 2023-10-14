@@ -3,26 +3,26 @@
 #include <string.h>
 
 
-struct Book {
-	char name[20];
-	short price;
-};
-
-int main() {
-	struct Book b1 = { "c语言程序设计",55 };
-	struct Book* pd = &b1;
-	strcpy(b1.name, "C++");//对字符串数组进行更改时必须使用strcpy，在使用它之前需要引入库<string.h>
-	printf("%s\n", pd->name);
-	printf("%d\n", pd->price);
-	/*printf("%s\n", (*pd).name);
-	printf("%d\n", (*pd).price);*/
-	/*printf("书名：%s\n", b1.name);
-	printf("价格；%d\n", b1.price);
-	b1.price = 15;
-	printf("价格：%d元\n", b1.price);*/
-	return 0;
-
-}
+//struct Book {
+//	char name[20];
+//	short price;
+//};
+//
+//int main() {
+//	struct Book b1 = { "c语言程序设计",55 };
+//	struct Book* pd = &b1;
+//	strcpy(b1.name, "C++");//对字符串数组进行更改时必须使用strcpy，在使用它之前需要引入库<string.h>
+//	printf("%s\n", pd->name);
+//	printf("%d\n", pd->price);
+//	/*printf("%s\n", (*pd).name);
+//	printf("%d\n", (*pd).price);*/
+//	/*printf("书名：%s\n", b1.name);
+//	printf("价格；%d\n", b1.price);
+//	b1.price = 15;
+//	printf("价格：%d元\n", b1.price);*/
+//	return 0;
+//
+//}
 
 
 //int main()
