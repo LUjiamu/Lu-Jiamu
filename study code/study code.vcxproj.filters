@@ -18,5 +18,11 @@
     <ClCompile Include="study code.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="study 01.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Project4\Project4\练习.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
