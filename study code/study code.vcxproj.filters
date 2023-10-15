@@ -24,5 +24,8 @@
     <ClCompile Include="..\..\Project4\Project4\练习.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="day02.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -2,25 +2,26 @@
 #include <stdio.h>
 #include <string.h>
 
+
 //分支和循环语句
 // 循环语句
 
-int main()
-{
-	int ch = 0;
-	while ((ch = getchar()) != EOF)//输入ctrl+z,就会退出。
-		//EOF:全称为end of file,值为-1，
-		putchar(ch);
-	/*int ch = getchar();
-	putchar(ch);
-	printf("%c\n", ch);
-	return 0;*/
-
-}
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)//输入ctrl+z,就会退出。
+//		//eof:全称为end of file,值为-1，
+//		putchar(ch);
+//	/*int ch = getchar();
+//	putchar(ch);
+//	printf("%c\n", ch);
+//	return 0;*/
+//
+//}
 
 //int main()
 //{
-//	int i = 0;
+//	int i = 0;8
 //	while (i <= 10)
 //	{
 //		i++;
