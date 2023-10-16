@@ -1,50 +1,107 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+
 #include <stdio.h>
 #include <string.h>
+#include <windows.h>
+#include <stdlib.h>
 
 
 
 //练习
+
+//三次登录
+//int main()
+//{
+//	int i = 0;
+//	char password[20] = { 0 };
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("请输入密码：");
+//		scanf("%s", password);
+//		if (strcmp(password, "654987") == 0)//strcmp用来比较两个字符串是否相等，需要引入库函数string.h
+//		{
+//			printf("登陆成功！");
+//			break;
+//		}
+//		else
+//		{
+//			printf("密码输入错误！\n");
+//		}
+//	}
+//	if (i == 3)
+//	{
+//		printf("三次密码输入均有误，程序退出！");
+//	}
+//	return 0;
+//}
+
+
+//两边打印数据
+//int main()
+//{
+//	char arr1[] = "welcome to bite!!!!";
+//	char arr2[] = "###################";
+//	int left = 0;
+//	int right = strlen(arr1) - 1;
+//	printf("%s\n", arr2);
+//
+//	while (left <= right)
+//	{
+//		arr2[left] = arr1[left] ;
+//		arr2[right] = arr1[right];
+//		printf("%s\n", arr2);
+//		//休息一秒
+//		Sleep(1000);
+//		system("cls");
+//		left++;
+//		right--;
+//	}
+//	printf("%s\n", arr2);
+//	return 0;
+//
+//}
+
+
+
 // 查找数据
 
 //优化版--二分法
 
-int main()
-{
-	int k = 0;
-	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	int left = 0;//左下标是0
-	int right = sz - 1;//右下标是sz-1
-	printf("请输入需要查找的数据：");
-	scanf("%d", &k);
-	while (left <= right)
-	{
-		int mid = (left + right) / 2;//计算中间下标
-		
-		if (arr[mid] > k)
-		{
-			right = mid - 1;
-
-		}
-		else if (arr[mid] < k)
-		{
-			left = mid + 1;
-		}
-		else if(arr[mid] == k)
-		{
-			printf("找到了，下标是：%d,对应的数值是：%d", mid, mid + 1);
-			break;
-		}
-	
-	}
-	if (left > right)
-	{
-		printf("没找到！");
-	}
-	
-	return 0;
-}
+//int main()
+//{
+//	int k = 0;
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10};
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int left = 0;//左下标是0
+//	int right = sz - 1;//右下标是sz-1
+//	printf("请输入需要查找的数据：");
+//	scanf("%d", &k);
+//	while (left <= right)
+//	{
+//		int mid = (left + right) / 2;//计算中间下标
+//		
+//		if (arr[mid] > k)
+//		{
+//			right = mid - 1;
+//
+//		}
+//		else if (arr[mid] < k)
+//		{
+//			left = mid + 1;
+//		}
+//		else if(arr[mid] == k)
+//		{
+//			printf("找到了，下标是：%d,对应的数值是：%d", mid, mid + 1);
+//			break;
+//		}
+//	
+//	}
+//	if (left > right)
+//	{
+//		printf("没找到！");
+//	}
+//	
+//	return 0;
+//}
 
 //int main()
 //{
@@ -276,7 +333,7 @@ int main()
 //	int ret1 = 0;
 //	printf("请输入密码->:");
 //	scanf("%s", password);
-//	char* ret = &password;
+//	ret = getchar();
 //	//getchar();
 //	//getchar();
 //	//ret = getchar(); 
@@ -284,9 +341,9 @@ int main()
 //	printf("请确认密码->：");
 //	scanf("%s", password1);
 //	//getchar();
-//	//ret1 = getchar(); 
-
-//	if (password == password1)
+//	ret1 = getchar(); 
+//
+//	if (strcmp(password,password1) == 0)
 //	{
 //		printf("确认成功\n");
 //	}
