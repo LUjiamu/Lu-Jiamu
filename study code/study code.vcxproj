@@ -130,6 +130,7 @@
     <ClCompile Include="..\..\Project4\Project4\练习.cpp" />
     <ClCompile Include="day02.cpp" />
     <ClCompile Include="day03.cpp" />
+    <ClCompile Include="day04.cpp" />
     <ClCompile Include="study 01.cpp" />
     <ClCompile Include="study code.cpp" />
   </ItemGroup>

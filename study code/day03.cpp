@@ -1,22 +1,22 @@
-#include <stdio.h>
-//求给定数的最大公约数--辗转相除法
-int main()
-{
-	int m = 0;
-	int n = 0;
-	int y = 0;
-	printf("请输入需要求的两个数：>");
-	scanf("%d%d", &m, &n);
-	while (m % n )//当m%n的值不为0时（即结果为真时），执行循环体，当m%n的值为0时（即结果为假时），跳出循环体。
-	{
-		y = m % n;
-		m = n;
-		n = y;
-	}
-	printf("最大公约数是：%d\n", y);
-	
-	return 0;
-}
+//#include <stdio.h>
+////求给定数的最大公约数--辗转相除法
+//int main()
+//{
+//	int m = 0;
+//	int n = 0;
+//	int y = 0;
+//	printf("请输入需要求的两个数：>");
+//	scanf("%d%d", &m, &n);
+//	while (m % n )//当m%n的值不为0时（即结果为真时），执行循环体，当m%n的值为0时（即结果为假时），跳出循环体。
+//	{
+//		y = m % n;
+//		m = n;
+//		n = y;
+//	}
+//	printf("最大公约数是：%d\n", y);
+//	
+//	return 0;
+//}
 
 
 
