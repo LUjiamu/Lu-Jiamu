@@ -1,26 +1,26 @@
 #include <stdio.h>
 
 //判断给定的数是不是素数
-int main()
-{
-	int a = 0;
-	int j = 0;
-	printf("请输入需要验证的数：>");
-	scanf("%d", &a);
-	for (j = 2; j < a; j++) 
-	{
-		if (a % j == 0)
-		{
-			printf("%d不是素数", a);
-			break;
-		}	
-	}
-	if (a == j)
-	{
-		printf("%d是素数", a);
-	}
-	return 0;
-}
+//int main()
+//{
+//	int a = 0;
+//	int j = 0;
+//	printf("请输入需要验证的数：>");
+//	scanf("%d", &a);
+//	for (j = 2; j < a; j++) 
+//	{
+//		if (a % j == 0)
+//		{
+//			printf("%d不是素数", a);
+//			break;
+//		}	
+//	}
+//	if (a == j)
+//	{
+//		printf("%d是素数", a);
+//	}
+//	return 0;
+//}
 
 //打印100-200内的素数
 
